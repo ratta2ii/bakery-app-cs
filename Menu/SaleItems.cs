@@ -5,10 +5,13 @@ namespace Menu.SaleItems {
    
     class Order {
 
+        int threePastries;
+        int singlePastry;
+        int singleBread;
+        int threeBread;
+
         public int PastryCount { get; set; }
         public int BreadCount { get; set; }
-        public int DiscountCount { get => DiscountCount1; set => DiscountCount1 = value; }
-        public int DiscountCount1 { get => discountCount; set => discountCount = value; }
 
         public Order(int pastryCount, int breadCount)
         {
@@ -16,24 +19,35 @@ namespace Menu.SaleItems {
             BreadCount = breadCount;
         }
 
-        int discountCount;
-        int fullPriceCount;
-        public int pastryCosts(int pastryCount)
+        public int PastryCosts(int pastryCount)
         {
-          
-            if (pastryCount > 3){
-                DiscountCount1 = pastryCount / 3;
+            if (pastryCount >= 3){
+                threePastries = pastryCount / 3;
             }
-            if (pastryCount % 3 != 0)
+            if (pastryCount % 3 != 0 || pastryCount < 3)
             {
-                fullPriceCount = pastryCount % 3;
+                singlePastry = pastryCount % 3;
             }
-            int discountFees = DiscountCount1 * 5;
-            int fullPriceFees = fullPriceCount * 2;
+            int discountFees = threePastries * 5;
+            int fullPriceFees = singlePastry * 2;
             return discountFees + fullPriceFees;
         }
 
-    //    static int TotalCharges(int pastryCost, int breadCost)
+        public int BreadCosts(int breadCount)
+        {
+            if (breadCount >= 3){
+                threeBread = breadCount / 3;
+            }
+            if (breadCount % 3 != 0 || breadCount < 3)
+            {
+                singleBread = breadCount % 3;
+            }
+            int discountFees = threeBread * 10;
+            int fullPriceFees = singleBread * 5;
+            return discountFees + fullPriceFees;
+        }
+
+    //    static int TotalCosts(int pastryCount, int breadCount)
     //    {
 
     //    }
@@ -44,4 +58,14 @@ namespace Menu.SaleItems {
 /*
 Pastry: Buy 1 for \$2 or 3 for $5.
 Bread: Buy 2, get 1 free. A single loaf costs $5.
+
  */
+
+
+
+ 
+
+
+
+
+

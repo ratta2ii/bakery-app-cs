@@ -23,7 +23,11 @@ namespace Menu.SaleItems {
 
            Console.WriteLine("---------------------------------------------");
 
-           Console.WriteLine(customerOrder.pastryCosts(customerOrder.PastryCount));
+           Console.WriteLine(customerOrder.PastryCosts(customerOrder.PastryCount));
+
+           Console.WriteLine("---------------------------------------------");
+
+            Console.WriteLine(customerOrder.BreadCosts(customerOrder.PastryCount));
 
         }
     }
