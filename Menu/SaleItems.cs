@@ -2,20 +2,21 @@ using System;
 using System.Collections.Generic;
 
 namespace Menu.SaleItems {
-    class Bread {
-       
-    }
+   
+    class Order {
 
-    class Pastry {
-
-        public string PastryName { get; set; }
         public int PastryCount { get; set; }
+        public int BreadCount { get; set; }
 
-        public Pastry(string name, int pastryCount)
+        public Order(int pastryCount, int breadCount)
         {
-            PastryName = name;
             PastryCount = pastryCount;
+            BreadCount = breadCount;
         }
 
+        // static int TotalCharges(int pastryCount, int breadCount)
+        // {
+
+        // }
     }
 }
