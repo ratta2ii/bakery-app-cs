@@ -1,34 +1,25 @@
 using System;
-using System.Collections.Generic;
 
-namespace Menu.SaleItems {
+namespace Menu.Order {
     class Program {
         static void Main()
         {
-           Console.WriteLine("Welcome to May's, the #1 Bakery in the County.");
-        
-           Console.WriteLine("---------------------------------------------");
+            Console.WriteLine("Welcome to May's, the #1 Bakery in the County.");
+            Console.WriteLine("--------------------");
 
-           Console.WriteLine("How many pastries would you like to order?");
-           int numberOfPastries = int.Parse(Console.ReadLine());
-           Console.WriteLine("How many pieces of bread would you like to order?");
+            Console.WriteLine("How many pastries would you like to order?");
+            int numberOfPastries = int.Parse(Console.ReadLine());
 
-           int numberOfBread = int.Parse(Console.ReadLine());
-           Console.WriteLine($"Great, it looks like you chose {numberOfPastries} from pastries, and {numberOfBread} bread.");
+            Console.WriteLine("How many pieces of bread would you like to order?");
+            int numberOfBread = int.Parse(Console.ReadLine());
+            Console.WriteLine("--------------------");
 
-           Order customerOrder = new Order(numberOfPastries, numberOfBread);
+            Console.WriteLine($"It looks like you chose {numberOfPastries} from pastries, and {numberOfBread} from bread.");
 
-           Console.WriteLine($"I am pastry property: {customerOrder.PastryCount} ");
-           Console.WriteLine($"I am bread property: {customerOrder.BreadCount} ");
+            Order customerOrder = new Order(numberOfPastries, numberOfBread);
 
-           Console.WriteLine("---------------------------------------------");
-
-           Console.WriteLine(customerOrder.PastryCosts(customerOrder.PastryCount));
-
-           Console.WriteLine("---------------------------------------------");
-
-            Console.WriteLine(customerOrder.BreadCosts(customerOrder.PastryCount));
-
+            Console.WriteLine("---------------------------------------------");
+            Console.WriteLine(customerOrder.TotalCosts(customerOrder.PastryCount, customerOrder.BreadCount));
         }
     }
 }

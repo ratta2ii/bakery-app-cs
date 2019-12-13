@@ -1,7 +1,6 @@
 using System;
-using System.Collections.Generic;
 
-namespace Menu.SaleItems {
+namespace Menu.Order {
    
     class Order {
 
@@ -19,7 +18,7 @@ namespace Menu.SaleItems {
             BreadCount = breadCount;
         }
 
-        public int PastryCosts(int pastryCount)
+        private int PastryCosts(int pastryCount)
         {
             if (pastryCount >= 3){
                 threePastries = pastryCount / 3;
@@ -30,10 +29,11 @@ namespace Menu.SaleItems {
             }
             int discountFees = threePastries * 5;
             int fullPriceFees = singlePastry * 2;
+            
             return discountFees + fullPriceFees;
         }
 
-        public int BreadCosts(int breadCount)
+        private int BreadCosts(int breadCount)
         {
             if (breadCount >= 3){
                 threeBread = breadCount / 3;
@@ -44,22 +44,27 @@ namespace Menu.SaleItems {
             }
             int discountFees = threeBread * 10;
             int fullPriceFees = singleBread * 5;
+
             return discountFees + fullPriceFees;
         }
 
-    //    static int TotalCosts(int pastryCount, int breadCount)
-    //    {
+        public string TotalCosts(int pastryCount, int breadCount)
+        {
+            int totalPastryCosts = PastryCosts(pastryCount);
+            int totalBreadCosts = BreadCosts(breadCount);
+            int grandTotal = totalPastryCosts + totalBreadCosts;
 
-    //    }
+            return $"Your Grand Total: ${grandTotal}.00";
+        }
+
     }
 }
 
 
-/*
-Pastry: Buy 1 for \$2 or 3 for $5.
-Bread: Buy 2, get 1 free. A single loaf costs $5.
 
- */
+// Pastry: Buy 1 for \$2 or 3 for $5.
+// Bread: Buy 2, get 1 free. A single loaf costs $5.
+
 
 
 
