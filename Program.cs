@@ -1,5 +1,6 @@
 using System;
 
+
 namespace Menu.Order {
     class Program {
         static void Main()
@@ -10,7 +11,7 @@ namespace Menu.Order {
             Console.WriteLine("How many pastries would you like to order?");
             int numberOfPastries = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("How many pieces of bread would you like to order?");
+            Console.WriteLine("How many pieces of loaves of bread would you like to order?");
             int numberOfBread = int.Parse(Console.ReadLine());
             Console.WriteLine("--------------------");
 

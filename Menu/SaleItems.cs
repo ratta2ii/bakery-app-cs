@@ -1,7 +1,7 @@
 using System;
 
+
 namespace Menu.Order {
-   
     class Order {
 
         int threePastries;
@@ -29,7 +29,7 @@ namespace Menu.Order {
             }
             int discountFees = threePastries * 5;
             int fullPriceFees = singlePastry * 2;
-            
+
             return discountFees + fullPriceFees;
         }
 

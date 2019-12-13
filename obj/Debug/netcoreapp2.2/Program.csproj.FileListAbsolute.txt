@@ -1,0 +1,10 @@
+/Users/trevormackin/Desktop/bakery-app-cs/bin/Debug/netcoreapp2.2/Program.deps.json
+/Users/trevormackin/Desktop/bakery-app-cs/bin/Debug/netcoreapp2.2/Program.runtimeconfig.json
+/Users/trevormackin/Desktop/bakery-app-cs/bin/Debug/netcoreapp2.2/Program.runtimeconfig.dev.json
+/Users/trevormackin/Desktop/bakery-app-cs/bin/Debug/netcoreapp2.2/Program.dll
+/Users/trevormackin/Desktop/bakery-app-cs/bin/Debug/netcoreapp2.2/Program.pdb
+/Users/trevormackin/Desktop/bakery-app-cs/obj/Debug/netcoreapp2.2/Program.csprojAssemblyReference.cache
+/Users/trevormackin/Desktop/bakery-app-cs/obj/Debug/netcoreapp2.2/Program.AssemblyInfoInputs.cache
+/Users/trevormackin/Desktop/bakery-app-cs/obj/Debug/netcoreapp2.2/Program.AssemblyInfo.cs
+/Users/trevormackin/Desktop/bakery-app-cs/obj/Debug/netcoreapp2.2/Program.dll
+/Users/trevormackin/Desktop/bakery-app-cs/obj/Debug/netcoreapp2.2/Program.pdb
