@@ -2,6 +2,7 @@ using System;
 
 
 namespace Menu.Order {
+    
     class Order {
 
         int threePastries;
@@ -56,14 +57,11 @@ namespace Menu.Order {
 
             return $"Your Grand Total: ${grandTotal}.00";
         }
-
     }
 }
 
 
 
-// Pastry: Buy 1 for \$2 or 3 for $5.
-// Bread: Buy 2, get 1 free. A single loaf costs $5.
 
 
 
