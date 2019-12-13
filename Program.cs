@@ -19,7 +19,11 @@ namespace Menu.SaleItems {
            Order customerOrder = new Order(numberOfPastries, numberOfBread);
 
            Console.WriteLine($"I am pastry property: {customerOrder.PastryCount} ");
-            Console.WriteLine($"I am bread property: {customerOrder.BreadCount} ");
+           Console.WriteLine($"I am bread property: {customerOrder.BreadCount} ");
+
+           Console.WriteLine("---------------------------------------------");
+
+           Console.WriteLine(customerOrder.pastryCosts(customerOrder.PastryCount));
 
         }
     }
