@@ -1,11 +1,17 @@
-# Bakery Console App Project
+# **Pierre's Bakery**
+
 ###### By Trevor Mackin 12/13/19  
 
-## **Description**
+### **Description**
 
-_This is a console application built in C#. The application uses 2 seperarte classes; One to run the program and the second class for the backend logic. A user will be welcomed to the bakery and asked both how many pastries they would like, and how many loafs of bread they would like to order. The program will then return a grand total to the user for the costs of the items._
+_This is a console application built in C#. The application uses 2 seperarte classes; One to run the program and the second class for the backend logic. When a user runs the application they should be welcomed to the bakery and asked both how many pastries they would like, and how many loaves of bread they would like to order. A user should be able to specify how many of both pastries and loaves of bread they would like to order. The application will then return a grand total to the user for the costs of the items._
+#
+_The  Deli is currently offering both of these discounts._
+* Bread: Buy 2, get 1 free. A single loaf costs $5.
+* Pastry: Buy 1 for \$2 or 3 for $5.
 
-## Setup/Installation Requirements:
+#
+###  **Setup/Installation Requirements**
 
 1. Open https://ratta2ii.github.io/bakery-app-css
 2. Clone repository to local machine
@@ -13,14 +19,12 @@ _This is a console application built in C#. The application uses 2 seperarte cla
 4. $ dotnet run (run in the Command Line Interface)
 5. Follow prompts to order bread and pastries
 
-
-## Specifications:
-
-
+#
+### **Specifications**
 ##### Example 1:
 # 
 ####
-    Welcome to May's, the #1 Bakery in the County.
+    Welcome to Pierre's, the #1 Bakery in the County.
     How many pastries would you like to order? 
     Input: 5
     How many loaves of break would you like to order?
@@ -28,11 +32,10 @@ _This is a console application built in C#. The application uses 2 seperarte cla
     
     Output: Your Grand Total: $19.00
     
-
 ##### Example 2:
 #
 
-    Welcome to May's, the #1 Bakery in the County.
+    Welcome to Pierre's, the #1 Bakery in the County.
     How many pastries would you like to order? 
     Input: 12
     How many loaves of break would you like to order?
@@ -40,12 +43,11 @@ _This is a console application built in C#. The application uses 2 seperarte cla
     
     Output:  Your Grand Total: $45.00
     
-## Technologies Used:
+### **Technologies Used**
 
 * C#
-* .NetCore
+* netcoreapp2.2
 
-
-### License:
+### **License**
 
 Copyright (c) 2019 **Trevor Mackin**

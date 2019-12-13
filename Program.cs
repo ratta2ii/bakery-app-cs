@@ -5,7 +5,7 @@ namespace Menu.Order {
     class Program {
         static void Main()
         {
-            Console.WriteLine("Welcome to May's, the #1 Bakery in the County.");
+            Console.WriteLine("Welcome to Pierre's, the #1 Bakery in the County.");
             Console.WriteLine("--------------------");
 
             Console.WriteLine("How many pastries would you like to order?");
