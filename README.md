@@ -25,8 +25,10 @@ _The  Deli is currently offering both of these discounts._
 # 
 ####
     Welcome to Pierre's, the #1 Bakery in the County.
+
     How many pastries would you like to order? 
     Input: 5
+
     How many loaves of break would you like to order?
     Input: 3
     
@@ -36,8 +38,10 @@ _The  Deli is currently offering both of these discounts._
 #
 
     Welcome to Pierre's, the #1 Bakery in the County.
+
     How many pastries would you like to order? 
     Input: 12
+    
     How many loaves of break would you like to order?
     Input: 7
     
