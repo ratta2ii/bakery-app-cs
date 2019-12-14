@@ -2,12 +2,13 @@ using System;
 
 
 namespace Menu.Order {
-  
+
     class Pastry {
 
         int threePastries;
-        int singlePastry;
+        int singlePastry;  
         public int PastryCount { get; set; }
+
         public Pastry(int pastryCount)
         {
             PastryCount = pastryCount;
@@ -25,12 +26,13 @@ namespace Menu.Order {
             int discountFees = threePastries * 5;
             int fullPriceFees = singlePastry * 2;
 
-            return discountFees + fullPriceFees;    
+            return discountFees + fullPriceFees;
         }
 
     }
 
     class Bread {
+
         int singleBread;
         int threeBread;
         public int BreadCount { get; set; }
@@ -68,16 +70,3 @@ namespace Menu.Order {
     }
 
 }
-
-
-
-
-
-
-
- 
-
-
-
-
-
