@@ -3,23 +3,17 @@ using System;
 
 namespace Menu.Order {
     
-    class Order {
+    class Pastry {
 
         int threePastries;
         int singlePastry;
-        int singleBread;
-        int threeBread;
-
         public int PastryCount { get; set; }
-        public int BreadCount { get; set; }
-
-        public Order(int pastryCount, int breadCount)
+        public Pastry(int pastryCount)
         {
             PastryCount = pastryCount;
-            BreadCount = breadCount;
         }
 
-        private int PastryCosts(int pastryCount)
+        public int PastryCosts(int pastryCount)
         {
             if (pastryCount >= 3){
                 threePastries = pastryCount / 3;
@@ -31,10 +25,22 @@ namespace Menu.Order {
             int discountFees = threePastries * 5;
             int fullPriceFees = singlePastry * 2;
 
-            return discountFees + fullPriceFees;
+            return discountFees + fullPriceFees;    
         }
 
-        private int BreadCosts(int breadCount)
+    }
+
+    class Bread {
+        int singleBread;
+        int threeBread;
+        public int BreadCount { get; set; }
+
+        public Bread(int breadCount)
+        {
+            BreadCount = breadCount;
+        }
+
+        public int BreadCosts(int breadCount)
         {
             if (breadCount >= 3){
                 threeBread = breadCount / 3;
@@ -49,6 +55,10 @@ namespace Menu.Order {
             return discountFees + fullPriceFees;
         }
 
+    }
+
+    class Order {
+
         public string TotalCosts(int pastryCount, int breadCount)
         {
             int totalPastryCosts = PastryCosts(pastryCount);
@@ -58,6 +68,7 @@ namespace Menu.Order {
             return $"Your Grand Total: ${grandTotal}.00";
         }
     }
+
 }
 
 

@@ -14,10 +14,13 @@ namespace Menu.Order {
             Console.WriteLine("--------------------");
             Console.WriteLine($"It looks like you chose {numberOfPastries} from pastries, and {numberOfBread} from bread.");
 
-            Order customerOrder = new Order(numberOfPastries, numberOfBread);
+            // Order customerOrder = new Order(numberOfPastries, numberOfBread);
+
+            Pastry pastryOrder = new Pastry(numberOfPastries);
+            Bread breadOrder = new Bread(numberOfBread);
 
             Console.WriteLine("--------------------");
-            Console.WriteLine(customerOrder.TotalCosts(customerOrder.PastryCount, customerOrder.BreadCount));
+            Console.WriteLine(Order.TotalCosts(2, 5));
         }
     }
 }
