@@ -13,14 +13,14 @@ namespace Menu.Order {
             PastryCount = pastryCount;
         }
 
-        public int PastryCosts(int pastryCount)
+        public int PastryCosts()
         {
-            if (pastryCount >= 3){
-                threePastries = pastryCount / 3;
+            if (PastryCount >= 3){
+                threePastries = PastryCount / 3;
             }
-            if (pastryCount % 3 != 0 || pastryCount < 3)
+            if (PastryCount % 3 != 0 || PastryCount < 3)
             {
-                singlePastry = pastryCount % 3;
+                singlePastry = PastryCount % 3;
             }
             int discountFees = threePastries * 5;
             int fullPriceFees = singlePastry * 2;
@@ -40,14 +40,14 @@ namespace Menu.Order {
             BreadCount = breadCount;
         }
 
-        public int BreadCosts(int breadCount)
+        public int BreadCosts()
         {
-            if (breadCount >= 3){
-                threeBread = breadCount / 3;
+            if (BreadCount >= 3){
+                threeBread = BreadCount / 3;
             }
-            if (breadCount % 3 != 0 || breadCount < 3)
+            if (BreadCount % 3 != 0 || BreadCount < 3)
             {
-                singleBread = breadCount % 3;
+                singleBread = BreadCount % 3;
             }
             int discountFees = threeBread * 10;
             int fullPriceFees = singleBread * 5;
@@ -57,17 +57,15 @@ namespace Menu.Order {
 
     }
 
-    // class Order {
+    class Order {
 
-    //     public string TotalCosts(int pastryCount, int breadCount)
-    //     {
-    //         int totalPastryCosts = Menu.Order.Pastry.PastryCosts(pastryCount);
-    //         int totalBreadCosts = BreadCosts(breadCount);
-    //         int grandTotal = totalPastryCosts + totalBreadCosts;
+        public string TotalCosts(int pastry, int bread)
+        {
+            int grandTotal = pastry + bread;
 
-    //         return $"Your Grand Total: ${grandTotal}.00";
-    //     }
-    // }
+            return $"Your Grand Total: ${grandTotal}.00";
+        }
+    }
 
 }
 
