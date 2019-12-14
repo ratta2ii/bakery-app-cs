@@ -20,7 +20,9 @@ namespace Menu.Order {
             Bread breadOrder = new Bread(numberOfBread);
 
             Console.WriteLine("--------------------");
-            Console.WriteLine(Order.TotalCosts(2, 5));
+            Console.WriteLine("I am pastry property: " + pastryOrder.PastryCount);
+
+           // Console.WriteLine(Order.TotalCosts(2, 5));
         }
     }
 }

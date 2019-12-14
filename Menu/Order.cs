@@ -2,7 +2,7 @@ using System;
 
 
 namespace Menu.Order {
-    
+  
     class Pastry {
 
         int threePastries;
@@ -57,17 +57,17 @@ namespace Menu.Order {
 
     }
 
-    class Order {
+    // class Order {
 
-        public string TotalCosts(int pastryCount, int breadCount)
-        {
-            int totalPastryCosts = PastryCosts(pastryCount);
-            int totalBreadCosts = BreadCosts(breadCount);
-            int grandTotal = totalPastryCosts + totalBreadCosts;
+    //     public string TotalCosts(int pastryCount, int breadCount)
+    //     {
+    //         int totalPastryCosts = Menu.Order.Pastry.PastryCosts(pastryCount);
+    //         int totalBreadCosts = BreadCosts(breadCount);
+    //         int grandTotal = totalPastryCosts + totalBreadCosts;
 
-            return $"Your Grand Total: ${grandTotal}.00";
-        }
-    }
+    //         return $"Your Grand Total: ${grandTotal}.00";
+    //     }
+    // }
 
 }
 
